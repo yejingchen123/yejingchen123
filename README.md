@@ -11,7 +11,6 @@
 
 <p align="center">
   你好，我是 <strong>叶惊尘</strong>。<br>
-  一边学习强化学习与模型架构，一边把想法写成工具、实验和手记。<br>
   喜欢把复杂的东西拆开，再一点点弄明白。
 </p>
 
@@ -77,5 +76,4 @@
     <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
     <img src="assets/footer-light.svg" alt="Stay curious. Keep making." width="820">
   </picture>
-  <sub>谢谢你路过我的小小实验室。欢迎看看代码，也看看代码背后的想法。</sub>
 </p>
