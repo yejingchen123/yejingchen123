@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="224" viewBox="0 0 480 224" role="img" aria-label="Claim Chart — 让专利要素、技术证据与 Word 文档严丝合缝。">
+<title>Claim Chart — 让专利要素、技术证据与 Word 文档严丝合缝。</title>
+<rect x="7" y="10" width="466" height="211" rx="13" fill="#e8ecdf"/>
+<path d="M20 5Q8 5 7 18L5 199Q5 212 20 213L458 215Q473 215 474 199L472 20Q472 6 458 7Z" fill="#fbf7ee" stroke="#cecdbd" stroke-width="1.3"/>
+<text x="28" y="34" font-family="'SFMono-Regular', Consolas, monospace" font-size="11" fill="#6c786e" letter-spacing="1.1">01 / EVIDENCE &amp; CRAFT</text>
+<text x="28" y="76" font-family="Georgia, serif" font-size="29" fill="#2f4339" >Claim Chart</text>
+<path d="M29 87q47-3 80 0" fill="none" stroke="#b96d42" stroke-width="2" stroke-linecap="round"/>
+<text x="28" y="119" font-family="'Trebuchet MS', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#2f4339" >让专利要素、技术证据</text>
+<text x="28" y="146" font-family="'Trebuchet MS', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#2f4339" >与 Word 文档严丝合缝。</text>
+<g transform="translate(370 26) rotate(3 35 35)" fill="none" stroke="#2f4339" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8L43 5 48 56 10 60Z" fill="#e8ecdf"/><path d="M13 18l22-2m-21 11 19-2m-18 11 13-2m-12 11 16-2"/><circle cx="47" cy="38" r="15" fill="#fbf7ee"/><path d="M57 50l13 16" stroke="#b96d42" stroke-width="5"/><path d="m39 38 5 5 10-12" stroke="#b96d42"/></g>
+<path d="M28 166q217 1 421-1" fill="none" stroke="#cecdbd" stroke-dasharray="2 4"/>
+<text x="28" y="193" font-family="'SFMono-Regular', Consolas, monospace" font-size="11" fill="#6c786e" letter-spacing="0.3">PYTHON · RESEARCH · DOCX</text>
+<g fill="none" stroke="#b96d42" stroke-width="1.8" stroke-linecap="round"><path d="m423 194 18-16m-16 0h16v15"/></g>
+</svg>

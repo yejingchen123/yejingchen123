@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="46" viewBox="0 0 640 46" role="img" aria-label="Learning by building. Sharing along the way.">
+<title>Learning by building. Sharing along the way.</title>
+<style>
+@keyframes reveal {0%,8% {clip-path:inset(0 100% 0 0)} 52%,94% {clip-path:inset(0 0 0 0)} 100% {clip-path:inset(0 100% 0 0)}}
+@keyframes blink {0%,46% {opacity:1} 47%,100% {opacity:.25}}
+.line {animation:reveal 12s steps(43,end) infinite}
+.dot {animation:blink 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce) {.line,.dot {animation:none}}
+</style>
+<circle class="dot" cx="30" cy="23" r="4" fill="#b96d42"/>
+<g class="line"><text x="48" y="29" font-family="'SFMono-Regular', Consolas, monospace" font-size="18" fill="#2f4339" >Learning by building. Sharing along the way.</text></g>
+</svg>

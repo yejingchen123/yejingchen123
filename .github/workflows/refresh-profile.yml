@@ -1,0 +1,53 @@
+name: Refresh field notes
+
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-profile.yml'
+      - 'scripts/refresh_blog.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the profile
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Refresh the public blog feed
+        continue-on-error: true
+        run: python3 scripts/refresh_blog.py
+
+      - name: Draw the contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: yejingchen123
+          outputs: |
+            assets/github-snake.svg?color_snake=%23cd774c&color_dots=%23f1eee5,%23d3dfc5,%23a9c295,%237c9d70,%23496848
+            assets/github-snake-dark.svg?palette=github-dark&color_snake=%23eaa072&color_dots=%23202b29,%23344538,%23556d49,%238ea777,%23c0d7a2
+
+      - name: Save refreshed content
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md assets/github-snake.svg assets/github-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo 'The profile is already up to date.'
+          else
+            git commit -m 'chore: refresh blog notes and contribution artwork'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
